@@ -31,16 +31,16 @@ const config: ThemeConfig = {
 
 const colors = {
   brand: {
-    900: "#322659",
-    800: "#44337A",
-    700: "#553C9A",
-    600: "#6B46C1",
-    500: "#805AD5",
-    400: "#9F7AEA",
-    300: "#B794F4",
-    200: "#D6BCFA",
-    100: "#E9D8FD",
-    50: "#FAF5FF",
+    900: "#112833",
+    800: "#142F3B",
+    700: "#173644",
+    600: "#1A3C4D",
+    500: "#1D4355",
+    400: "#284C5E",
+    300: "#3F5F6F",
+    200: "#567280",
+    100: "#6C8591",
+    50: "#8398A2",
   },
 };
 
@@ -51,8 +51,6 @@ interface RootDefaultProps {
   children: ReactNode;
 }
 const RootDefault = ({ title, children }: RootDefaultProps) => {
-  console.info(meta)
-
   return (
     <html lang="en">
       <head>
@@ -81,7 +79,6 @@ export default function App() {
 }
 
 export function ErrorBoundary({ error }: { error: Error }) {
-  console.log(error)
   return (
     <RootDefault title="Oh no!">
       <Box textAlign="center" py={20}>

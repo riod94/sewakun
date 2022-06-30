@@ -9,10 +9,10 @@ export const TWITTER_LINK = 'https://twitter.com/ChakraTemplates';
 /**
  * SEO constants
  */
-export const SEO_TITLE = 'Selingan Templates';
+export const SEO_TITLE = 'Sewakun';
 export const SEO_DESCRIPTION =
-  'A growing open-source collection of hand-crafted Chakra UI templates ready to drop into your React project.';
+  'Platform patungan sewa akun digital.';
 export const SEO_KEYWORDS =
-  'Selingan, remix, chakra ui, ui templates, web templates, web design, react templates, react ui templates, chakra ui templates, chakra templates';
+  'Sewakun, sewaakun, sewa, akun, sewa akun, digital, youtube, netflix, disney, hotstar';
 export const SEO_OG_IMAGE = '../public/favicon.ico';
 export const SEO_TWITTER_IMAGE = '../public/favicon.ico';

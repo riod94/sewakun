@@ -9,7 +9,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { Center, Container, Heading } from "@chakra-ui/layout";
-import { IoAirplane, IoSync, IoSettings } from "react-icons/io5";
+import { IoAirplane, IoSync, IoReceipt } from "react-icons/io5";
 
 interface FeatureProps {
   title: string;
@@ -58,12 +58,11 @@ export default function SimpleThreeColumns() {
         >
           <Box>
             <Center>
-            <Heading py={5}>Why Choose Us?</Heading>
+            <Heading py={5}>Kenapa memilih kami?</Heading>
             </Center>
             <Center>
               <Text color={useColorModeValue("gray.600", "gray.500")} align={"center"}>
-                Blandit turpis cursus in hac habitasse platea dictumst quisque
-                sagittis.
+                Sewakun menyediakan beberapa fitur menarik buat kamu.
               </Text>
             </Center>
           </Box>
@@ -78,24 +77,24 @@ export default function SimpleThreeColumns() {
           <Box p={4}>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
               <Feature
-                icon={<Icon as={IoSettings} w={10} h={10} color={"yellow.600"} />}
-                title={"Customizable"}
+                icon={<Icon as={IoReceipt} w={10} h={10} color={"yellow.600"} />}
+                title={"Admin Free*"}
                 text={
-                  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+                  "Dengan patungan biaya berlangganan akan dibagi rata dengan jumlah member per-akun. sehingga kamu bisa menikmati produk digital lebih murah dan bebas biaya admin untuk produk digital tertentu."
                 }
               />
               <Feature
                 icon={<Icon as={IoSync} w={10} h={10} color={"green.600"} />}
                 title={"Reliable"}
                 text={
-                  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+                  "Sebagai pengelola layanan, kami berkomitmen untuk menjaga kerahasiaan data setiap pengguna. Dan demi kenyamanan akun yang kami share juga dibatasi sesuai dengan maksimum user di setiap layanan"
                 }
               />
               <Feature
                 icon={<Icon as={IoAirplane} w={10} h={10} color={"blue.600"} />}
                 title={"Instant Delivery"}
                 text={
-                  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+                  "Kamu akan langsung menerima akses login akun pesananmu di history order ketika pesananmu sudah selesai di proses dan kami juga akan menginformasikannya ke email dan whatsapp mu"
                 }
               />
             </SimpleGrid>

@@ -47,34 +47,30 @@ export default function Hero() {
                 as={"span"}
                 position={"relative"}
                 color={"pink.400"}
-                fontSize="6xl"
+                fontSize="5xl"
                 fontWeight="extrabold"
               >
-                Hello, Everyone!
+                Halo Semua!
               </Text>
               <br />
-              <Text as={"span"} fontSize="6xl" fontWeight="extrabold">
-                Welcome to{" "}
+              <Text as={"span"} fontSize="5xl" fontWeight="extrabold">
+                Selamat datang di{" "}
                 <Text
                   as={"span"}
                   bgClip={"text"}
                   bgGradient={useColorModeValue(
-                    "linear(to-r, #44337A, #9F7AEA)",
-                    "linear(to-r, #FAF5FF, #9F7AEA)"
+                    "linear(to-r, #1D4355, #567280)",
+                    "linear(to-r, #8398A2, #567280)"
                   )}
                 >
-                  Selingan
+                  Sewakun
                 </Text>
               </Text>
             </Heading>
           </ScaleFade>
           <ScaleFade in={isOpen} initialScale={0.9} delay={0.1}>
             <Text color={useColorModeValue("gray.600", "gray.500")}>
-              Selingan is a landing page template built using Remix + Chakra UI.
-              You can modify and use it for your commercial website for free. In
-              hac habitasse platea dictumst quisque sagittis. Convallis tellus
-              id interdum velit. Feugiat vivamus at augue eget arcu dictum
-              varius duis. All that is free!
+              Sewakun adalah platform untuk sewa akun digital dengan cara patungan bersama pengguna lain yang memiliki keinginan sama sepertimu untuk dapat menikmati layanan premium seperti Youtube, Netflix, Spotify dan layanan digital lainnya.
             </Text>
           </ScaleFade>
           <Stack
@@ -92,12 +88,12 @@ export default function Hero() {
                   bg={"brand.400"}
                   _hover={{ bg: "brand.500" }}
                 >
-                  Get started
+                  Selengkapnya
                 </Button>
               </Link>
             </ScaleFade>
             <ScaleFade in={isOpen} initialScale={0.4} delay={0.4}>
-              <Link to={"#howWeWork"}>
+              <Link to={"#howToOrder"}>
                 <Button
                   rounded={"full"}
                   size={"lg"}
@@ -105,7 +101,7 @@ export default function Hero() {
                   px={6}
                   leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
                 >
-                  How It Works
+                  Cara Pemesanan
                 </Button>
               </Link>
             </ScaleFade>
@@ -142,9 +138,8 @@ export default function Hero() {
                 align={"center"}
                 w={"100%"}
                 h={"100%"}
-                // src={"images/website-building.svg"}
                 src={
-                  "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                  "https://img.freepik.com/free-photo/best-friends-watching-streaming-service-together-indoors_23-2149007840.jpg?t=st=1656566408~exp=1656567008~hmac=006692ff429f79fa69fb001e180fec76b429af73466fe66c0052df777922c000&w=826"
                 }
               />
             </Box>

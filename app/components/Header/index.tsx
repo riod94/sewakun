@@ -8,14 +8,15 @@ import {
   useColorModeValue,
   useColorMode,
   Link,
-  Text,
-  useBreakpointValue,
+  Image,
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { IoMoon, IoSunny } from "react-icons/io5";
 
 import { MobileNav } from "./MobileNav";
 import { DesktopNav } from "./DesktopNav";
+import Brand from '../../../public/images/brand/Brand.svg';
+import BrandWhite from '../../../public/images/brand/Brand-White.svg';
 
 const Header = () => {
   const { isOpen: isMobileNavOpen, onToggle } = useDisclosure();
@@ -72,20 +73,7 @@ const Header = () => {
                 alignItems={"center"}
                 spacing={{ base: 2, sm: 4 }}
               >
-                {/* <Icon as={Logo} w={{ base: 8 }} h={{ base: 8 }} /> */}
-                <Text
-                  textAlign={useBreakpointValue({ base: "center", md: "left" })}
-                  fontSize={"xl"}
-                  alignItems={"center"}
-                  fontWeight={900}
-                  bgClip={"text"}
-                  bgGradient={useColorModeValue(
-                    "linear(to-r, #44337A, #9F7AEA)",
-                    "linear(to-r, #FAF5FF, #9F7AEA)"
-                  )}
-                >
-                  Selingan
-                </Text>
+                <Image src={colorMode == 'dark' ? BrandWhite : Brand} height={50} />
               </Stack>
             </Link>
           </Flex>
