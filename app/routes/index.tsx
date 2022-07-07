@@ -5,6 +5,7 @@ import Testimonials from "~/components/Testimonials";
 import Portfolio from "~/components/Portfolio";
 import OrderFlow from "~/components/OrderFlow";
 import Faq from "~/components/Faq";
+import ContactUs from "~/components/ContactUs";
 
 export default function Index() {
   return (
@@ -14,6 +15,7 @@ export default function Index() {
       <Portfolio />
       <OrderFlow />
       <Faq />
+      <ContactUs />
       {/* <Testimonials /> */}
     </AppLayout>
   );

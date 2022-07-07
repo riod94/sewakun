@@ -12,11 +12,9 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
-import AppStoreBadge from '../../../public/images/app-store-badge.svg';
-import GooglePlayBadge from '../../../public/images/google-play-badge.svg';
 
-// import AppStoreBadge from "@/components/AppStoreBadge";
-// import PlayStoreBadge from "@/components/PlayStoreBadge";
+import Brand from '../../../public/images/brand/Brand.svg';
+import BrandWhite from '../../../public/images/brand/Brand-White.svg';
 
 const ListHeader = ({ children }: { children: ReactNode }) => {
   return (
@@ -65,32 +63,28 @@ export default function LargeWithAppLinksAndSocial() {
       <Container as={Stack} maxW={"6xl"} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={"flex-start"}>
-            <ListHeader>Company</ListHeader>
-            <Link href={"#"}>About Us</Link>
-            <Link href={"#"}>Blog</Link>
-            <Link href={"#"}>Careers</Link>
-            <Link href={"#"}>Contact Us</Link>
+            <ListHeader><Image src={useColorModeValue(Brand, BrandWhite)} height={50} /></ListHeader>
+            <Text as={'h6'}>Sewakun adalah layanan patungan sewa akun digital.</Text>
           </Stack>
 
           <Stack align={"flex-start"}>
-            <ListHeader>Support</ListHeader>
-            <Link href={"#"}>Help Center</Link>
-            <Link href={"#"}>Safety Center</Link>
-            <Link href={"#"}>Community Guidelines</Link>
+            <ListHeader>Sewakun</ListHeader>
+            <Link href={"#hero"}>Tentang Kami</Link>
+            <Link href={"#howToOrder"}>Cara Pesan</Link>
+          </Stack>
+
+          <Stack align={"flex-start"}>
+            <ListHeader>Dukungan</ListHeader>
+            <Link href={"#faq"}>FAQ</Link>
+            <Link href={"#contactUs"}>Hubungi Kami</Link>
           </Stack>
 
           <Stack align={"flex-start"}>
             <ListHeader>Legal</ListHeader>
-            <Link href={"#"}>Cookies Policy</Link>
-            <Link href={"#"}>Privacy Policy</Link>
-            <Link href={"#"}>Terms of Service</Link>
-            <Link href={"#"}>Law Enforcement</Link>
-          </Stack>
-
-          <Stack align={"flex-start"}>
-            <ListHeader>Install App</ListHeader>
-            <Image src={AppStoreBadge} alt="app-store-badge" width={160} height={50} />
-            <Image src={GooglePlayBadge} alt="google-play-badge" width={160} height={50} />
+            <Link href={"#"}>Kebijakan Privasi</Link>
+            <Link href={"#"}>Ketentuan Layanan</Link>
+            {/* <Link href={"#"}>Cookies Policy</Link> */}
+            {/* <Link href={"#"}>Law Enforcement</Link> */}
           </Stack>
         </SimpleGrid>
       </Container>

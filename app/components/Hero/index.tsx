@@ -29,7 +29,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <Container maxW={"6xl"}>
+    <Container maxW={"6xl"} id="hero">
       <Stack
         align={"center"}
         spacing={8}

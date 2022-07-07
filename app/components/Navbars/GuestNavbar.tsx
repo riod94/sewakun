@@ -80,7 +80,7 @@ export default function WithSubnavigation() {
                   "linear(to-r, #FAF5FF, #9F7AEA)"
                 )}
               >
-                Selingan
+                Sewakun
                 {/* <Flex justify={{base: "center"}}>
               <Text>S</Text>
               <Text color={"brand.400"}>elingan</Text>
