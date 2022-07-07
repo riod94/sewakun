@@ -1,6 +1,6 @@
-import {
-    GITHUB_LINK,
-} from '../../contants';
+// import {
+//     GITHUB_LINK,
+// } from '../../contants';
 
 export interface NavItem {
     label: string;

@@ -20,7 +20,6 @@ import {
     Link
 } from '@chakra-ui/react';
 import {
-    MdPhone,
     MdEmail,
     MdLocationOn,
     MdOutlineEmail,
