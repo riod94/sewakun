@@ -20,13 +20,10 @@ import {
     Link
 } from '@chakra-ui/react';
 import {
-    MdEmail,
-    MdLocationOn,
     MdOutlineEmail,
     MdOutlinePhoneAndroid,
-    MdPhoneAndroid,
 } from 'react-icons/md';
-import { BsPerson, BsInstagram, BsFacebook } from 'react-icons/bs';
+import { BsPerson, BsInstagram, BsFacebook, BsWhatsapp, BsClockHistory } from 'react-icons/bs';
 
 function ContactUs() {
     return (
@@ -51,14 +48,15 @@ function ContactUs() {
                                             <VStack pl={0} spacing={3} alignItems="flex-start">
                                                 <Button
                                                     as={"a"}
-                                                    href="mailto:halo@sewakun.com"
+                                                    href="https://wa.me/+6281299902002?text=Halo%20Sewakun%2C%20Saya%20punya%20beberapa%20pertanyaan.."
+                                                    target={'_blank'}
                                                     size="md"
                                                     height="48px"
                                                     width="200px"
                                                     variant="ghost"
                                                     color="#DCE2FF"
                                                     _hover={{ border: '2px solid', borderColor: 'brand.200' }}
-                                                    leftIcon={<MdPhoneAndroid color="#6C8591" size="20px" />}>
+                                                    leftIcon={<BsWhatsapp color="#6C8591" size="20px" />}>
                                                     +62 812-9990-2002
                                                 </Button>
                                                 <Button
@@ -70,18 +68,21 @@ function ContactUs() {
                                                     variant="ghost"
                                                     color="#DCE2FF"
                                                     _hover={{ border: '2px solid', borderColor: 'brand.200' }}
-                                                    leftIcon={<MdEmail color="#6C8591" size="20px" />}>
+                                                    leftIcon={<MdOutlineEmail color="#6C8591" size="20px" />}>
                                                     halo@sewakun.com
                                                 </Button>
                                                 <Button
                                                     size="md"
+                                                    py={10}
                                                     height="48px"
                                                     width="200px"
                                                     variant="ghost"
                                                     color="#DCE2FF"
                                                     _hover={{ border: '2px solid', borderColor: 'brand.200' }}
-                                                    leftIcon={<MdLocationOn color="#6C8591" size="20px" />}>
-                                                    Medan, Indonesia
+                                                    leftIcon={<BsClockHistory color="#6C8591" size="20px" />}>
+                                                    Jam Operasional <br/>
+                                                    Setiap Hari <br/>
+                                                    08:00-21:00
                                                 </Button>
                                             </VStack>
                                         </Box>

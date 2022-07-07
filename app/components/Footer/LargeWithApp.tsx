@@ -104,7 +104,7 @@ export default function LargeWithAppLinksAndSocial() {
           align={{ md: "center" }}
         >
           <Text>© 2022 Sewakun. All rights reserved</Text>
-          <Stack direction={"row"} spacing={6}>
+          {/* <Stack direction={"row"} spacing={6}>
             <SocialButton label={"Twitter"} href={"#"}>
               <FaTwitter />
             </SocialButton>
@@ -114,7 +114,7 @@ export default function LargeWithAppLinksAndSocial() {
             <SocialButton label={"Instagram"} href={"#"}>
               <FaInstagram />
             </SocialButton>
-          </Stack>
+          </Stack> */}
         </Container>
       </Box>
     </Box>
