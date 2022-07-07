@@ -11,10 +11,10 @@ import {
     Button,
 } from '@chakra-ui/react';
 import Confetti from '../../../public/images/confetti-blue.svg';
-import Netflix from 'https://boff.sewakun.com//storage/digital/netflix.jpg';
-import Youtube from 'https://boff.sewakun.com//storage/digital/youtube.jpg';
-import Hotstar from 'https://boff.sewakun.com//storage/digital/hotstar.jpg';
-import Spotify from 'https://boff.sewakun.com//storage/digital/spotify.jpg';
+import Netflix from 'https://boff.sewakun.com/storage/digital/netflix.jpg';
+import Youtube from 'https://boff.sewakun.com/storage/digital/youtube.jpg';
+import Hotstar from 'https://boff.sewakun.com/storage/digital/hotstar.jpg';
+import Spotify from 'https://boff.sewakun.com/storage/digital/spotify.jpg';
 
 const data = [
     {
