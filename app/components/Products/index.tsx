@@ -11,14 +11,10 @@ import {
     Button,
 } from '@chakra-ui/react';
 import Confetti from '../../../public/images/confetti-blue.svg';
-import Netflix from 'https://boff.sewakun.com/storage/digital/netflix.jpg';
-import Youtube from 'https://boff.sewakun.com/storage/digital/youtube.jpg';
-import Hotstar from 'https://boff.sewakun.com/storage/digital/hotstar.jpg';
-import Spotify from 'https://boff.sewakun.com/storage/digital/spotify.jpg';
 
 const data = [
     {
-        image: Netflix,
+        image: 'https://boff.sewakun.com/storage/digital/netflix.jpg',
         client: 'Netflix',
         title: <Box fontSize={'xs'}>
             <ul style={{ listStyle: 'none' }}>
@@ -28,7 +24,7 @@ const data = [
         </Box>,
     },
     {
-        image: Hotstar,
+        image: 'https://boff.sewakun.com/storage/digital/hotstar.JPG',
         client: 'Disney+ Hotstar',
         title: <Box fontSize={'xs'}>
             <ul style={{ listStyle: 'none' }}>
@@ -40,7 +36,7 @@ const data = [
         </Box>,
     },
     {
-        image: Youtube,
+        image: 'https://boff.sewakun.com/storage/digital/youtube.JPG',
         client: 'Youtube',
         title: <Box fontSize={'xs'}>
             <ul style={{ listStyle: 'none' }}>
@@ -50,7 +46,7 @@ const data = [
         </Box>,
     },
     {
-        image: Spotify,
+        image: 'https://boff.sewakun.com/storage/digital/spotify.JPG',
         client: 'Spotify',
         title: <Box fontSize={'xs'}>
             <ul style={{ listStyle: 'none' }}>
