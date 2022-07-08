@@ -31,7 +31,7 @@ export interface Template {
 
 export const NAV_ITEMS: Array<NavItem> = [
     {
-        label: 'Layanan',
+        label: 'Produk Digital',
         href: '#products'
     },
     {
@@ -43,7 +43,7 @@ export const NAV_ITEMS: Array<NavItem> = [
         href: '#faq',
     },
     {
-        label: 'Contact Us',
+        label: 'Kontak',
         href: '#contactUs',
     },
 ];

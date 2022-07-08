@@ -41,7 +41,7 @@ function ContactUs() {
                                 <WrapItem>
                                     <Box>
                                         <Heading>Contact Us</Heading>
-                                        <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                                        <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.400">
                                             Silahkan isi formulir untuk menghubungi kami.
                                         </Text>
                                         <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
@@ -56,7 +56,7 @@ function ContactUs() {
                                                     variant="ghost"
                                                     color="#DCE2FF"
                                                     _hover={{ border: '2px solid', borderColor: 'brand.200' }}
-                                                    leftIcon={<BsWhatsapp color="#6C8591" size="20px" />}>
+                                                    leftIcon={<BsWhatsapp color={"#6C8591"} size="20px" />}>
                                                     +62 812-9990-2002
                                                 </Button>
                                                 <Button
@@ -68,7 +68,7 @@ function ContactUs() {
                                                     variant="ghost"
                                                     color="#DCE2FF"
                                                     _hover={{ border: '2px solid', borderColor: 'brand.200' }}
-                                                    leftIcon={<MdOutlineEmail color="#6C8591" size="20px" />}>
+                                                    leftIcon={<MdOutlineEmail color={"#6C8591"} size="20px" />}>
                                                     halo@sewakun.com
                                                 </Button>
                                                 <Button
@@ -79,7 +79,7 @@ function ContactUs() {
                                                     variant="ghost"
                                                     color="#DCE2FF"
                                                     _hover={{ border: '2px solid', borderColor: 'brand.200' }}
-                                                    leftIcon={<BsClockHistory color="#6C8591" size="20px" />}>
+                                                    leftIcon={<BsClockHistory color={"#6C8591"} size="20px" />}>
                                                     Jam Operasional <br/>
                                                     Setiap Hari <br/>
                                                     08:00-21:00
@@ -116,14 +116,14 @@ function ContactUs() {
                                 </WrapItem>
                                 <WrapItem>
                                     <Box bg={useColorModeValue("white", "gray.600")} borderRadius="lg">
-                                        <Box m={6} color="#0B0E3F">
+                                        <Box m={6}>
                                             <VStack spacing={5}>
                                                 <FormControl>
                                                     <FormLabel color={useColorModeValue("brand.500", "white")}>Nama Lengkap</FormLabel>
                                                     <InputGroup color={useColorModeValue("brand.500", "white")}>
                                                         <InputLeftElement
                                                             pointerEvents="none"
-                                                            children={<BsPerson color={useColorModeValue("gray.800", "white")} />}
+                                                            children={<BsPerson color={useColorModeValue("brand.500", "white")} />}
                                                         />
                                                         <Input type="text" size="md" placeholder='Nama Lengkap' />
                                                     </InputGroup>
@@ -133,7 +133,7 @@ function ContactUs() {
                                                     <InputGroup color={useColorModeValue("brand.500", "white")}>
                                                         <InputLeftElement
                                                             pointerEvents="none"
-                                                            children={<MdOutlinePhoneAndroid color={useColorModeValue("gray.800", "white")} />}
+                                                            children={<MdOutlinePhoneAndroid color={useColorModeValue("brand.500", "white")} />}
                                                         />
                                                         <Input type="number" size="md" placeholder='08123456789' />
                                                     </InputGroup>
@@ -143,7 +143,7 @@ function ContactUs() {
                                                     <InputGroup color={useColorModeValue("brand.500", "white")}>
                                                         <InputLeftElement
                                                             pointerEvents="none"
-                                                            children={<MdOutlineEmail color={useColorModeValue("gray.800", "white")} />}
+                                                            children={<MdOutlineEmail color={useColorModeValue("brand.500", "white")} />}
                                                         />
                                                         <Input type="text" size="md" placeholder='my@mail.com' />
                                                     </InputGroup>

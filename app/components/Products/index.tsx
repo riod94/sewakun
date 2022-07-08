@@ -19,7 +19,7 @@ const data = [
         title: <Box fontSize={'xs'}>
             <ul style={{ listStyle: 'none' }}>
                 <li><SimpleGrid columns={2}><Box>User Payer</Box><Box>Rp. 46.500 / 1bln</Box></SimpleGrid></li>
-                <li><SimpleGrid columns={2}><Box>User Member</Box><Box>Rp. 51.615 / 1bln</Box></SimpleGrid></li>
+                <li><SimpleGrid columns={2}><Box>User Member</Box><Box>Rp. 52.545 / 1bln</Box></SimpleGrid></li>
             </ul>
         </Box>,
     },
@@ -29,9 +29,9 @@ const data = [
         title: <Box fontSize={'xs'}>
             <ul style={{ listStyle: 'none' }}>
                 <li><SimpleGrid columns={2}><Box>User Payer</Box><Box>Rp. 19.500 / 1bln</Box></SimpleGrid></li>
-                <li><SimpleGrid columns={2}><Box>User Member</Box><Box>Rp. 21.645 / 1bln</Box></SimpleGrid></li>
+                <li><SimpleGrid columns={2}><Box>User Member</Box><Box>Rp. 24.375 / 1bln</Box></SimpleGrid></li>
                 <li><SimpleGrid columns={2}><Box>User Payer</Box><Box>Rp. 99.500 / 12bln</Box></SimpleGrid></li>
-                <li><SimpleGrid columns={2}><Box>User Member</Box><Box>Rp. 110.445 / 12bln</Box></SimpleGrid></li>
+                <li><SimpleGrid columns={2}><Box>User Member</Box><Box>Rp. 119.400 / 12bln</Box></SimpleGrid></li>
             </ul>
         </Box>,
     },
@@ -41,7 +41,7 @@ const data = [
         title: <Box fontSize={'xs'}>
             <ul style={{ listStyle: 'none' }}>
                 <li><SimpleGrid columns={2}><Box>User Payer</Box><Box>Rp. 19.580 / 1bln</Box></SimpleGrid></li>
-                <li><SimpleGrid columns={2}><Box>User Member</Box><Box>Rp. 21.932 / 1bln</Box></SimpleGrid></li>
+                <li><SimpleGrid columns={2}><Box>User Member</Box><Box>Rp. 24.475 / 1bln</Box></SimpleGrid></li>
             </ul>
         </Box>,
     },
@@ -51,9 +51,9 @@ const data = [
         title: <Box fontSize={'xs'}>
             <ul style={{ listStyle: 'none' }}>
                 <li><SimpleGrid columns={2}><Box>User Payer</Box><Box>Rp. 17.380 / 1bln</Box></SimpleGrid></li>
-                <li><SimpleGrid columns={2}><Box>User Member</Box><Box>Rp. 19.292 / 1bln</Box></SimpleGrid></li>
+                <li><SimpleGrid columns={2}><Box>User Member</Box><Box>Rp. 21.725 / 1bln</Box></SimpleGrid></li>
                 <li><SimpleGrid columns={2}><Box>User Payer</Box><Box>Rp. 94.800 / 6bln</Box></SimpleGrid></li>
-                <li><SimpleGrid columns={2}><Box>User Member</Box><Box>Rp. 105.228 / 6bln</Box></SimpleGrid></li>
+                <li><SimpleGrid columns={2}><Box>User Member</Box><Box>Rp. 113.760 / 6bln</Box></SimpleGrid></li>
             </ul>
         </Box>,
     },

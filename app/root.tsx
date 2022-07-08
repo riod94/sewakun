@@ -52,7 +52,7 @@ interface RootDefaultProps {
 }
 const RootDefault = ({ title, children }: RootDefaultProps) => {
   return (
-    <html lang="en">
+    <html lang="id">
       <head>
         <title>{title ?? SEO_TITLE}</title>
         <Meta />

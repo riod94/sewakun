@@ -18,7 +18,11 @@ import { DesktopNav } from "./DesktopNav";
 import Brand from '../../../public/images/brand/Brand.svg';
 import BrandWhite from '../../../public/images/brand/Brand-White.svg';
 
-const Header = () => {
+interface headerProps {
+  hideNavbar?: boolean;
+}
+
+const Header = ({ hideNavbar = false }: headerProps) => {
   const { isOpen: isMobileNavOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
 
@@ -42,26 +46,29 @@ const Header = () => {
         }}
       >
         <Container as={Flex} maxW={"6xl"} align={"center"}>
-          <Flex
-            flex={{ base: "0", md: "auto" }}
-            ml={{ base: -2 }}
-            mr={{ base: 6, md: 0 }}
-            display={{ base: "flex", md: "none" }}
-          >
-            <IconButton
-              onClick={onToggle}
-              icon={
-                isMobileNavOpen ? (
-                  <CloseIcon w={3} h={3} />
-                ) : (
-                  <HamburgerIcon w={5} h={5} />
-                )
-              }
-              variant={"ghost"}
-              size={"sm"}
-              aria-label={"Toggle Navigation"}
-            />
-          </Flex>
+          {
+            !hideNavbar &&
+            <Flex
+              flex={{ base: "0", md: "auto" }}
+              ml={{ base: -2 }}
+              mr={{ base: 6, md: 0 }}
+              display={{ base: "flex", md: "none" }}
+            >
+              <IconButton
+                onClick={onToggle}
+                icon={
+                  isMobileNavOpen ? (
+                    <CloseIcon w={3} h={3} />
+                  ) : (
+                    <HamburgerIcon w={5} h={5} />
+                  )
+                }
+                variant={"ghost"}
+                size={"sm"}
+                aria-label={"Toggle Navigation"}
+              />
+            </Flex>
+          }
 
           <Flex
             flex={{ base: 1, md: "auto" }}
@@ -78,31 +85,37 @@ const Header = () => {
             </Link>
           </Flex>
 
-          <Stack
-            direction={"row"}
-            align={"center"}
-            spacing={{ base: 6, md: 8 }}
-            flex={{ base: 1, md: "auto" }}
-            justify={"flex-end"}
-          >
-            <DesktopNav display={{ base: "none", md: "flex" }} />
-            <IconButton
-              size={"sm"}
-              variant={"ghost"}
-              aria-label={"Toggle Color Mode"}
-              onClick={toggleColorMode}
-              icon={
-                colorMode == "light" ? (
-                  <IoMoon size={18} />
-                ) : (
-                  <IoSunny size={18} />
-                )
-              }
-            />
-          </Stack>
+          {
+            !hideNavbar &&
+            <Stack
+              direction={"row"}
+              align={"center"}
+              spacing={{ base: 6, md: 8 }}
+              flex={{ base: 1, md: "auto" }}
+              justify={"flex-end"}
+            >
+              <DesktopNav display={{ base: "none", md: "flex" }} />
+              <IconButton
+                size={"sm"}
+                variant={"ghost"}
+                aria-label={"Toggle Color Mode"}
+                onClick={toggleColorMode}
+                icon={
+                  colorMode == "light" ? (
+                    <IoMoon size={18} />
+                  ) : (
+                    <IoSunny size={18} />
+                  )
+                }
+              />
+            </Stack>
+          }
         </Container>
       </Flex>
-      <MobileNav isOpen={isMobileNavOpen} />
+      {
+        !hideNavbar &&
+        <MobileNav isOpen={isMobileNavOpen} />
+      }
     </Box>
   );
 };

@@ -5,12 +5,13 @@ import Header from "../components/Header";
 
 interface AppLayoutProps {
   children: ReactNode;
+  hideNavbar?: boolean;
 }
 
-export const AppLayout = ({ children }: AppLayoutProps) => {
+export const AppLayout = ({ children, hideNavbar = false }: AppLayoutProps) => {
   return (
     <>
-      <Header />
+      <Header hideNavbar={hideNavbar} />
       {children}
       <LargeWithAppLinksAndSocial />
     </>
