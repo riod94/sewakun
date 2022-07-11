@@ -37,7 +37,7 @@ function Faq() {
                 <Heading>Frequently Asked Questions (FAQ)</Heading>
             </Stack>
             <Stack pb={8}>
-                <SimpleGrid columns={2} spacing={5}>
+                <SimpleGrid columns={{ base:1, md: 2}} spacing={5}>
                     {
                         data.map((item, idx) => (
                             <Box key={idx.toString()}>
