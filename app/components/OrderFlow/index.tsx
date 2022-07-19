@@ -6,7 +6,6 @@ import {
     Text,
     Stack,
     Container,
-    Avatar,
     useColorModeValue,
     Button,
     Image,

@@ -24,8 +24,20 @@ import {
     MdOutlinePhoneAndroid,
 } from 'react-icons/md';
 import { BsPerson, BsInstagram, BsFacebook, BsWhatsapp, BsClockHistory } from 'react-icons/bs';
+// import { useEffect, useState } from 'react';
+// import { getHistory } from '~/services/HistoryService';
 
 function ContactUs() {
+    // const [data, setData] = useState([])
+    // console.log(data)
+    // useEffect(() => {
+    //     getHistory().then(res => { setData(res.rows) }).catch(e => e);
+
+    //     return () => {
+
+    //     }
+    // }, [])
+
     return (
         <Box id='contactUs' bg={useColorModeValue("brand.50", "brand.700")}>
             <Container maxW="6xl" py={8} centerContent overflow="hidden">
@@ -80,8 +92,8 @@ function ContactUs() {
                                                     color="#DCE2FF"
                                                     _hover={{ border: '2px solid', borderColor: 'brand.200' }}
                                                     leftIcon={<BsClockHistory color={"#6C8591"} size="20px" />}>
-                                                    Jam Operasional <br/>
-                                                    Setiap Hari <br/>
+                                                    Jam Operasional <br />
+                                                    Setiap Hari <br />
                                                     08:00-21:00
                                                 </Button>
                                             </VStack>
@@ -91,7 +103,7 @@ function ContactUs() {
                                             spacing={5}
                                             px={5}
                                             alignItems="center">
-                                            <Link href="https://www.instagram.com/sewakun.official" target="_blank" isExternal>
+                                            <Link href="https://www.facebook.com/sewakun.official" target="_blank" isExternal>
                                                 <IconButton
                                                     aria-label="facebook"
                                                     variant="ghost"

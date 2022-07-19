@@ -36,20 +36,20 @@ export default function LargeWithAppLinksAndSocial() {
 
           <Stack align={"flex-start"}>
             <ListHeader>Sewakun</ListHeader>
-            <Link href={"#hero"}>Tentang Kami</Link>
-            <Link href={"#howToOrder"}>Cara Pesan</Link>
+            <Link href={"/#hero"}>Tentang Kami</Link>
+            <Link href={"/#howToOrder"}>Cara Pesan</Link>
           </Stack>
 
           <Stack align={"flex-start"}>
             <ListHeader>Dukungan</ListHeader>
-            <Link href={"#faq"}>FAQ</Link>
-            <Link href={"#contactUs"}>Hubungi Kami</Link>
+            <Link href={"/#faq"}>FAQ</Link>
+            <Link href={"/#contactUs"}>Hubungi Kami</Link>
           </Stack>
 
           <Stack align={"flex-start"}>
             <ListHeader>Legal</ListHeader>
             <Link href={"terms-and-conditions"}>Syarat dan Ketentuan</Link>
-            <Link href={"#"}>Kebijakan Privasi</Link>
+            <Link href={"privacy-policy"}>Kebijakan Privasi</Link>
             {/* <Link href={"#"}>Cookies Policy</Link> */}
             {/* <Link href={"#"}>Law Enforcement</Link> */}
           </Stack>

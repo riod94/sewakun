@@ -30,7 +30,14 @@ function Faq() {
                 <li>Kemudian Admin akan mengirimkan pengganti dana yang terdebet</li>
             </ol></Box>
         },
+        {
+            'title': 'Berapa lama pesanan saya akan diproses?',
+            'description': <Box p={6} color={useColorModeValue("brand.600", "white")}>Pesanan kamu akan di proses dalam waktu 1 minggu atau lebih. Khusus untuk product PreOrder maka kamu harus menunggu hingga kuota grup per akun penuh.</Box>
+        },
     ];
+    let accordionBgColor = useColorModeValue('brand.500', 'gray.500')
+    let accordionHoverColor = useColorModeValue('gray.50', 'grey.600')
+
     return (
         <Container id='faq' maxW={"6xl"} py={12}>
             <Stack py={8} spacing={0} align={'center'}>
@@ -44,7 +51,7 @@ function Faq() {
                                 <Accordion allowToggle allowMultiple>
                                     <AccordionItem rounded={20}>
                                         <Heading as={"h2"}>
-                                            <AccordionButton rounded={20} bg={useColorModeValue('brand.500', 'gray.500')} color='white' _hover={{ color: useColorModeValue('gray.50', 'grey.600') }}>
+                                            <AccordionButton rounded={20} bg={accordionBgColor} color='white' _hover={{ color: accordionHoverColor }}>
                                                 <Box flex='1' textAlign='left'>
                                                     {item.title}
                                                 </Box>

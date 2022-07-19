@@ -8,13 +8,14 @@ import {
   ScrollRestoration,
   useCatch,
 } from "@remix-run/react";
-import type { MetaFunction } from "@remix-run/node";
+import { type ReactNode } from "react";
+import { type MetaFunction } from "@remix-run/node";
 import { Box, Button, ChakraProvider, extendTheme, Flex, Heading, Image, useColorModeValue } from "@chakra-ui/react";
 import type { ThemeConfig } from "@chakra-ui/react";
 import { SEO_TITLE, SEO_DESCRIPTION, SEO_KEYWORDS } from "./contants";
-import { type ReactNode } from "react";
 import ByTheRoad from '../public/images/by-the-road.svg';
 import Confetti from '../public/images/confetti.svg';
+import { RecoilRoot } from "recoil";
 
 export let meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -22,6 +23,7 @@ export let meta: MetaFunction = () => ({
   title: SEO_TITLE,
   description: SEO_DESCRIPTION,
   keywords: SEO_KEYWORDS,
+  themeColor: '#1D4355'
 });
 
 const config: ThemeConfig = {
@@ -59,10 +61,14 @@ const RootDefault = ({ title, children }: RootDefaultProps) => {
         <Links />
       </head>
       <body>
-        <ChakraProvider theme={theme}>
-          {children}
-          <LiveReload />
-        </ChakraProvider>
+        <RecoilRoot>
+          <ChakraProvider theme={theme}>
+            {children}
+            <LiveReload />
+          </ChakraProvider>
+        </RecoilRoot>
+        <ScrollRestoration />
+        <Scripts />
       </body>
     </html>
   );
@@ -72,8 +78,6 @@ export default function App() {
   return (
     <RootDefault>
       <Outlet />
-      <ScrollRestoration />
-      <Scripts />
     </RootDefault>
   );
 }
